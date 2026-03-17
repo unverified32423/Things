@@ -1,0 +1,23 @@
+[build]
+  functions = "netlify/functions"
+  publish   = "."
+
+[[redirects]]
+  from = "/login"
+  to   = "/.netlify/functions/login"
+  status = 200
+
+[[redirects]]
+  from = "/callback"
+  to   = "/.netlify/functions/callback"
+  status = 200
+
+[[redirects]]
+  from = "/me"
+  to   = "/.netlify/functions/me"
+  status = 200
+
+[[redirects]]
+  from = "/logout"
+  to   = "/.netlify/functions/logout"
+  status = 200
